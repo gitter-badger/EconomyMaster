@@ -29,6 +29,7 @@ public function onLoad(){
 	    @mkdir($this->getDataFolder() . "players/");
         $this->data = $this->getDataFolder();
         $this->config = $this->getConfig()->getAll();
+$this->getCommand("mymoney")->setExecutor(new Commands\MyMoney($this));
 }
 public function getSymbol(){
   $this->config = new Config($this->data . "config.yml", Config::YAML);
