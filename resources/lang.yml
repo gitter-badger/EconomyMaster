@@ -1,0 +1,5 @@
+---
+my-money: "You have {MONEY}{SYMBOL}"
+bank-deposit: "You have deposit {AMOUNT}{SYMBOL} in your bank"
+bank-withdraw: "You have withdraw {AMOUNT}{SYMBOL}"
+...
