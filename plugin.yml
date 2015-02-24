@@ -1,0 +1,6 @@
+name: EconomyMaster
+main: Asparanc\EconomyMaster\EcoAPI
+version: "1.0.0"
+api: [1.0.0]
+author: Asparanc
+description: New Economy Plugin !
