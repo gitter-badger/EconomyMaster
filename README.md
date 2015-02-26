@@ -41,7 +41,7 @@ Tax {}
 
 SignSchedule {}
 
-ResetAccount {}
+ResetAccount {DONE}
 
 
 
