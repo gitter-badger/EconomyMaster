@@ -25,3 +25,4 @@ public function onJoin(PlayerJoinEvent $event){
     	  $this->plugin->getLogger()->notice("New player : ".$player->getName());
     	}
 }
+}
