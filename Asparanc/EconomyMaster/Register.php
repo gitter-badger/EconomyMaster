@@ -21,6 +21,7 @@ public function onJoin(PlayerJoinEvent $event){
     	  $this->data = $this->getDataFolder();
     	  $data = new Config($this->data . "players/" . strtolower($player->getName() . ".yml"), Config::YAML);
     	$data->set("money", 0);
+    	$date->set("bank", 0);
     	$data->save();
     	  $this->plugin->getLogger()->notice("New player : ".$player->getName());
     	}
