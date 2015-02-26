@@ -37,6 +37,7 @@ public function onLoad(){
 	    @mkdir($this->getDataFolder() . "signs/"); 
 	$this->data = $this->getDataFolder();
         $this->config = $this->getConfig()->getAll();
+        $this->playerfolder = $this->getDataFolder() . "players/";
 $this->getCommand("mymoney")->setExecutor(new Commands\MyMoney($this));
 }
 public function getSymbol(){
@@ -44,3 +45,6 @@ public function getSymbol(){
     	return $this->config->get('symbol');
 }
 
+public function isRegistered($player){
+	return file_exists($this->playerfolder.strtolower($player.".yml"));
+}
