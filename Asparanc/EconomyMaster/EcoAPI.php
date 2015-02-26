@@ -27,7 +27,15 @@ public function onLoad(){
     public function onEnable(){
 	    @mkdir($this->getDataFolder());
 	    @mkdir($this->getDataFolder() . "players/");
-        $this->data = $this->getDataFolder();
+	    @mkdir($this->getDataFolder() . "areas/");
+	    @mkdir($this->getDataFolder() . "casinos/");
+	    @mkdir($this->getDataFolder() . "clouds/");
+	    @mkdir($this->getDataFolder() . "lands/");
+	    @mkdir($this->getDataFolder() . "npcs/");
+	    @mkdir($this->getDataFolder() . "pjobs/");
+	    @mkdir($this->getDataFolder() . "pshops/");
+	    @mkdir($this->getDataFolder() . "signs/"); 
+	$this->data = $this->getDataFolder();
         $this->config = $this->getConfig()->getAll();
 $this->getCommand("mymoney")->setExecutor(new Commands\MyMoney($this));
 }
