@@ -5,9 +5,9 @@ ________________________________________________________________________________
 
 # To do list
 ______________
-API {IN PROGRESS}
+API {DONE wait github update}
 
-Bank {}
+Bank {IN PROGRESS}
 
 Auctions {}
 
