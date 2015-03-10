@@ -19,6 +19,12 @@ public function ResetPlayer($player){
     	  $data = new Config($this->data . "players/" . strtolower($player->getName() . ".yml"), Config::YAML);
     	  $data->set("money", 0);
     	  $data->set("bank", 0);
+    	  $data->set("Miner", 0);
+    	$data->set("MinerXP", 0);
+    	$data->set("Woodcutter", 0);
+    	$data->set("WoodcutterXP", 0);
+    	$data->set("Farmer", 0);
+    	$data->set("FarmerXP", 0);
     	$data->save();
     	$player->sendMessage("[Eco] Your account have been reset.");
   }
