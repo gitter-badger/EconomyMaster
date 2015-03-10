@@ -1,3 +1,6 @@
+Sorry for the time :/ i will update my change this week.
+
+
 # EconomyMaster
 
 EconomyMaster it's a new economy plugin for PocketMine-MP start by Asparanc and developped by the PikaTeam.
