@@ -38,9 +38,9 @@ public function onCommand(CommandSender $sender, Command $cmd, $label, array $ar
 		case "mymoney":
 
 $money =EcoAPI::getInstance()->getPlayerMoney($sender);
-
+$symbol = EcoAPI::getInstance()->getSymbol();
 $player->sendMessage("********************************");
-$player->sendMessage("You have ".$money."©");
+$player->sendMessage("You have ".$money.$symbol);
 $player->sendMessage("********************************");
 return true;
 break;
